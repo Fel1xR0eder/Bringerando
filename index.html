@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bringerando</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="new_script.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <div class="header">
+        <div class="header-logo">
+            <img id="logo" src="./img/logo.png" onclick="reload()">
+        </div>
+        <div class="header-location">
+            <img id="location" src="./img/location.png"> 
+            <p class="p-white"> Bakerstreet 221b, London </p> 
+        </div>
+        <div class="header-menu">
+            <img src="./img/german.png">
+            <img id="menu" src="./img/menu.svg">
+        </div>
+    </div>
+
+
+    <div id="restaurant" class="restaurant">
+        <div id="headbasket" class="headbasket">
+            <h2><u>Warenkorb</u></h2>
+            <div id="basket" class="basket">
+                <!-- JS injection-->
+                <div id='divSum'></div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <img class="head-image" src="./img/background-header.jpg">
+            <img class="store-image" src="./img/store-logo.png">
+
+            <div class="name">
+                <p class="headline">Küche des Friedens</p>
+
+                <img class="rating" src="./img/star.png">
+                <img class="rating" src="./img/star.png">
+                <img class="rating" src="./img/star.png">
+                <img class="rating" src="./img/star.png">
+                <img class="rating" src="./img/rating.png">
+                <p class="rating-font">(27 Bewertungen)</p>
+            </div>
+
+            <div class="food-category">
+
+                <img src="./img/searching.png">
+
+                <a id="food-category" href=locationfoods[0]>Salat </a>   <!--href to array foods[0, 1]-->
+                <a id="food-category" href="#Pinsa">Pinsa</a>   <!--href to array foods[2, 3]-->
+                <a id="food-category" href="#Bowl">Bowl</a>     <!--href to array foods[4, 5]-->
+                <a id="food-category" href="#Desert">Desert</a> <!--href to array foods[6, 7]-->
+
+            </div>
+
+            <div id="content"></div>
+            
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <img class="footerlogo" src="./img/logo.png">
+
+        <div class="footer-right">
+            <div>
+                <a href="/templates/impressum.html">Impressum</a>
+            </div>
+            <a href="/templates/dsgvo.html">Datenschutzverordnung</a>
+
+        </div>
+
+</body>
+
+</html>
