@@ -32,7 +32,7 @@ a {
 
 a:hover {
     cursor: pointer;
-    color: #045a18;
+    color: #089027;
 }
 
 span {
@@ -347,7 +347,7 @@ span {
     padding-bottom: 14px;
     padding-left: 12px;
     padding-right: 12px;
-    background-color: #045a1878;
+    background-color:#045a18c2;
     color: white;
     border: black;
     border-radius: 8px;
@@ -355,6 +355,10 @@ span {
     position: sticky;
     bottom: 50px;
     left: 35vw;
+}
+
+.attritbute-href {
+    font-size: 8px !important;
 }
 
 @media (max-width: 1400px ) { 

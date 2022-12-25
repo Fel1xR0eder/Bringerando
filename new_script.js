@@ -8,10 +8,11 @@ let prices = [6.50, 7.50, 8.00, 8.00, 9.00, 9.50, 3.50, 4.00];
 let amounts = [];
 let basketFood = [];
 let basketPrice = [];
-let delivery = 3.50.toFixed(2).replace('.',',');
+let delivery = 3.50.toFixed(2).replace('.', ',');
+let basketButton = true;
 
 
-function onLoad(){
+function onLoad() {
     renderBasket();
     loadAll();
 }
@@ -186,11 +187,17 @@ function reload() {
 }
 
 function mobileBasketButton() {
-    document.getElementById('content').innerHTML+= `
-    <button onclick="showMobileBasket()" class="mobile-order">
-        Bestellung abschließen
-    </button> `;
-}
+    if (basketButton == true) {
+        if (window.innerWidth <= 800) {
+
+            document.getElementById('content').innerHTML += `
+            <button onclick="showMobileBasket()" class="mobile-order">
+            Bestellung abschließen
+        </button> `;
+        }
+    }
+    basketButton = false;
+}   
 
 function showMobileBasket() {
     let basket = document.getElementById('headbasket');
